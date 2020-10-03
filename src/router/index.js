@@ -89,7 +89,7 @@ router.beforeEach((to, from, next) => {
     NProgress.set(0.1)
     let subdomain = ''
     if (process.env.NODE_ENV == "development") {
-        subdomain = 'demo'
+        subdomain = 'tests'
     } else {
         subdomain = window.location.host.split('.')[0]
     }
